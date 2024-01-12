@@ -85,6 +85,33 @@
       </nav>
     </header>
 
+    <script>
+      // Assume you have an array of districts
+      const bangladeshiDistricts = [
+        "Dhaka",
+        "Chittagong",
+        "Rajshahi",
+        "Khulna",
+        "Barisal",
+        "Sylhet",
+        "Rangpur",
+        "Mymensingh",
+      ];
+
+      // Get the dropdown element
+      const districtDropdown = document.getElementById("districtDropdown");
+
+      // Dynamically generate dropdown items
+      bangladeshiDistricts.forEach((district) => {
+        const dropdownItem = document.createElement("a");
+        dropdownItem.classList.add("dropdown-item");
+        dropdownItem.href = "#"; // You can set the href value if needed
+        dropdownItem.textContent = district;
+
+        districtDropdown.appendChild(dropdownItem);
+      });
+    </script>
+
     <!-- javascript section -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
