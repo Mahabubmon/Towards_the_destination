@@ -1,0 +1,23 @@
+/* Add this to your existing CSS or create a new CSS file */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scrollbar */
+}
+
+.main {
+    height: 100vh;
+    /* Adjust the height as needed */
+    background: url("../images/Screenshot\ \(742\).png") center/cover no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Additional styles for the image container if necessary */
+.main img {
+    width: 100%;
+    /* Ensure the image takes up the entire container */
+    height: auto;
+}
