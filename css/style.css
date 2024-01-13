@@ -1,9 +1,22 @@
-/* Add this to your existing CSS or create a new CSS file */
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     /* Prevent horizontal scrollbar */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Set a high z-index to ensure the header appears above other elements */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .main {
@@ -13,6 +26,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    /* Hide the scrollbars for the main section */
 }
 
 /* Additional styles for the image container if necessary */
@@ -20,4 +35,12 @@ body {
     width: 100%;
     /* Ensure the image takes up the entire container */
     height: auto;
+}
+
+/* Adjust the content below the header to prevent overlap */
+.content {
+    margin-top: 100px;
+    /* Adjust as needed based on the header height */
+    margin-bottom: 100px;
+    /* Adjust as needed based on the footer height */
 }
