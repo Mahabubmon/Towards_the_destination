@@ -29,3 +29,6 @@ body {
      position: relative;
      /* Ensure the footer is positioned relative to its container */
  }
+ .box{
+    background-color: bisque;
+ }
