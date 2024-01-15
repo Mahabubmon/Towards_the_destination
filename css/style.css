@@ -4,3 +4,16 @@
     font-weight: bold;
     
 }
+
+
+
+/* change Navigation color */
+
+.navbar #myMenu .custom-nav .nav-item a{
+    color: white;
+}
+
+
+.navbar #myMenu .custom-nav .nav-item a:hover{
+    color: #f0aab1;
+}

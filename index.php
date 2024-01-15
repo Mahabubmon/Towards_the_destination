@@ -16,27 +16,26 @@
 <body>
 
   <!-- start nav-bar -->
-  <nav class="navbar navbar-expend-sm navbar-dark bg-danger pl-5 fixed-top">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-danger pl-5 fixed-top">
     <a href="index.php" class="navbar-brand">গন্তব্যের দিকে</a>
-    <span classs="nav-text">Give the best route for the customer's</span>
+    <span class="nav-text">Give the best route for the customer's</span>
 
-    <button type="button" class="nav-bar-togler" data-toggle="collapse" data-target="#myMenue">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="myMenu">
-      <ul class="navbar-nav pl-5">
+      <ul class="navbar-nav pl-5 custom-nav">
         <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link">District</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link">Placement</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link">Info</a></li>
       </ul>
     </div>
-
   </nav>
   <!-- End nav-bar -->
-
+  <main></main>
 
   <!-- javascript section -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
