@@ -17,3 +17,14 @@
 .navbar #myMenu .custom-nav .nav-item a:hover{
     color: #f0aab1;
 }
+
+/* image responsive */
+
+.back-image{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat ;
+    min-height: 90vh;
+    border-radius: 0;
+    margin-top: 74px;
+}
