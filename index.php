@@ -35,7 +35,11 @@
     </div>
   </nav>
   <!-- End nav-bar -->
-  <main></main>
+  <!-- start header jumbotron -->
+  <header class="jumbotron" style="background-image:url('images/Screenshot (742).png')">
+    <h1>hello</h1>
+  </header>
+  <!-- end header jumbotron -->
 
   <!-- javascript section -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
