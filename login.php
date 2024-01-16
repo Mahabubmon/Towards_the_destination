@@ -99,3 +99,46 @@ if (isset($_POST['submit'])) {
 </body>
 
 </html>
+
+<script>
+    function isvalid() {
+        var email = document.form.email.value;
+        var password = document.form.password.value;
+        if (email.length == "" && password.length == "") {
+            alert(" Username and password field is empty!!!");
+            return false;
+        }
+        else if (email.length == "") {
+            alert(" Email field is empty!!!");
+            return false;
+        }
+        else if (password.length == "") {
+            alert(" Password field is empty!!!");
+            return false;
+        }
+
+    }
+
+
+    //Sweet alert function
+    function sweetAlertSuccess(msg) {
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: msg,
+            showConfirmButton: false,
+            timer: 1500,
+        });
+    }
+
+    function sweetAlertErrors(msg) {
+        Swal.fire({
+            position: "top-end",
+            icon: "error",
+            title: msg,
+            showConfirmButton: false,
+            timer: 1500,
+        });
+    }
+
+</script>
