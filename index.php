@@ -13,7 +13,8 @@
   <title>গন্তব্যের দিকে</title>
 </head>
 
-<>
+
+<body>
 
   <!-- start nav-bar -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-danger pl-5 fixed-top">
@@ -31,11 +32,13 @@
         <li class="nav-item"><a href="index.php" class="nav-link">About</a></li>
         <li class="nav-item"><a href="index.php" class="nav-link">Contact</a></li>
         <li class="nav-item"><a href="index.php" class="nav-link">Info</a></li>
+      </ul>
 
-        <!-- Add the following lines for the login button -->
-        <li class="nav-item ml-auto">
+      <!-- Move the login button list item here for right alignment -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
           <a href="login.php" class="nav-link">
-            <button type="button" class="btn btn-outline-light">Login</button>
+            <button type="button" class="btn btn-outline-light loginbtn">Login</button>
           </a>
         </li>
       </ul>
@@ -46,6 +49,8 @@
   <header class="jumbotron back-image" style="background-image:url('images/Screenshot (742).png');">
   </header>
 
+
+
   <!-- end header jumbotron -->
 
 
@@ -54,6 +59,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   <script src="./js/all.min.js"></script>
-  </body>
+</body>
 
 </html>
