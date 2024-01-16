@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+include 'db.php';
+
+$username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,13 +43,22 @@
         <li class="nav-item"><a href="index.php" class="nav-link">Info</a></li>
       </ul>
 
-      <!-- Move the login button list item here for right alignment -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="login.php" class="nav-link">
-            <button type="button" class="btn btn-outline-light loginbtn">Login</button>
-          </a>
-        </li>
+      <ul class="navbar-nav ml-auto">
+        <?php if ($username) { ?>
+          <!-- If user is logged in, display logout button -->
+          <li class="nav-item">
+            <a href="logout.php" class="nav-link">
+              <button type="button" class="btn btn-outline-light loginbtn">Logout</button>
+            </a>
+          </li>
+        <?php } else { ?>
+          <!-- If user is not logged in, display login button -->
+          <li class="nav-item">
+            <a href="login.php" class="nav-link">
+              <button type="button" class="btn btn-outline-light loginbtn">Login</button>
+            </a>
+          </li>
+        <?php } ?>
       </ul>
     </div>
   </nav>
