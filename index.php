@@ -76,6 +76,7 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     </ul>
   </div>
   <!-- end side menu -->
+  <div class="overlay"></div>
 
 
   <!-- javascript section -->
