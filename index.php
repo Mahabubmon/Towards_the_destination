@@ -66,10 +66,16 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <!-- start header jumbotron -->
   <header class="jumbotron back-image" style="background-image:url('images/Screenshot (742).png');">
   </header>
-
-
-
   <!-- end header jumbotron -->
+  <div class="side-menu">
+    <ul class="list-unstyled">
+      <li><a href="#">Menu Item 1</a></li>
+      <li><a href="#">Menu Item 2</a></li>
+      <li><a href="#">Menu Item 3</a></li>
+      <!-- Add more menu items as needed -->
+    </ul>
+  </div>
+  <!-- end side menu -->
 
 
   <!-- javascript section -->
