@@ -20,6 +20,45 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <title>গন্তব্যের দিকে</title>
+
+
+  <style>
+    /* Your existing styles */
+
+    /* Style for the side menu */
+    .side-menu {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      background-color: #333;
+      padding-top: 60px;
+      transition: 0.5s;
+    }
+
+    .side-menu a {
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .side-menu a:hover {
+      color: #f1f1f1;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+  </style>
 </head>
 
 
@@ -30,7 +69,8 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     <a href="index.php" class="navbar-brand">গন্তব্যের দিকে</a>
     <span class="nav-text">Give the best route for the customer's</span>
 
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu"
+      onclick="toggleSideMenu()">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="myMenu">
@@ -76,7 +116,7 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     </ul>
   </div>
   <!-- end side menu -->
-  <div class="overlay"></div>
+  <div class="overlay" onclick="toggleSideMenu()"></div>
 
 
   <!-- javascript section -->
@@ -84,6 +124,22 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   <script src="./js/all.min.js"></script>
+  <script src="./js/script.js"></script>
+
+
+  <script>
+    function toggleSideMenu() {
+      var sideMenu = document.querySelector('.side-menu');
+
+      if (sideMenu.style.left === '-250px' || sideMenu.style.left === '') {
+        sideMenu.style.left = '0';
+        document.querySelector('.overlay').style.display = 'block';
+      } else {
+        sideMenu.style.left = '-250px';
+        document.querySelector('.overlay').style.display = 'none';
+      }
+    }
+  </script>
 </body>
 
 </html>
