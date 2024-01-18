@@ -107,6 +107,25 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <header class="jumbotron back-image" style="background-image:url('images/Screenshot (742).png');">
   </header>
   <!-- end header jumbotron -->
+
+  <!-- start -->
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+
+
+
   <div class="side-menu">
     <ul class="list-unstyled">
       <li><a href="#">Menu Item 1</a></li>
