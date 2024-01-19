@@ -58,6 +58,51 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
       background: rgba(0, 0, 0, 0.7);
       z-index: 1;
     }
+
+    /* Style for the side menu */
+    .side-menu {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      background-color: #333;
+      padding-top: 60px;
+      transition: 0.5s;
+    }
+
+    .side-menu a {
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .side-menu a:hover {
+      color: #f1f1f1;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+
+    /* New styles for fixed footer */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -103,33 +148,26 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     </div>
   </nav>
   <!-- End nav-bar -->
+  <!-- Sidebar -->
+  <div class="side-menu">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <!-- Add more links as needed -->
+  </div>
+  <div class="overlay" onclick="toggleSideMenu()"></div>
+  <!-- End Sidebar -->
   <!-- start header jumbotron -->
   <header class="jumbotron back-image" style="background-image:url('images/Screenshot (742).png');">
   </header>
   <!-- end header jumbotron -->
 
-  <!-- start -->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/images/Screenshot (742).png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
-    </div>
-  </div>
-  <!-- end -->
 
-
-
-
-  <!-- end side menu -->
-
-
+  <!-- start footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 গন্তব্যের দিকে. All Rights Reserved.</p>
+  </footer>
+  <!-- end footer -->
 
 
   <!-- javascript section -->
@@ -139,20 +177,23 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <script src="./js/all.min.js"></script>
   <script src="./js/script.js"></script>
 
-
   <script>
-    function toggleSideMenu() {
-      var sideMenu = document.querySelector('.side-menu');
+  function toggleSideMenu() {
+    var sideMenu = document.querySelector('.side-menu');
 
-      if (sideMenu.style.left === '-250px' || sideMenu.style.left === '') {
-        sideMenu.style.left = '0';
-        document.querySelector('.overlay').style.display = 'block';
-      } else {
-        sideMenu.style.left = '-250px';
-        document.querySelector('.overlay').style.display = 'none';
-      }
+    if (sideMenu.style.left === '-250px' || sideMenu.style.left === '') {
+      sideMenu.style.left = '0';
+      document.querySelector('.overlay').style.display = 'block';
+    } else {
+      sideMenu.style.left = '-250px';
+      document.querySelector('.overlay').style.display = 'none';
     }
-  </script>
+  }
+
+</script>
+
 </body>
 
 </html>
+
+
