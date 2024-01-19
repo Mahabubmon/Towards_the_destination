@@ -171,29 +171,26 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
 
 
   <!-- javascript section -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   <script src="./js/all.min.js"></script>
   <script src="./js/script.js"></script>
 
   <script>
-  function toggleSideMenu() {
-    var sideMenu = document.querySelector('.side-menu');
+    function toggleSideMenu() {
+      var sideMenu = document.querySelector('.side-menu');
 
-    if (sideMenu.style.left === '-250px' || sideMenu.style.left === '') {
-      sideMenu.style.left = '0';
-      document.querySelector('.overlay').style.display = 'block';
-    } else {
-      sideMenu.style.left = '-250px';
-      document.querySelector('.overlay').style.display = 'none';
+      if (sideMenu.style.left === '-250px' || sideMenu.style.left === '') {
+        sideMenu.style.left = '0';
+        document.querySelector('.overlay').style.display = 'block';
+      } else {
+        sideMenu.style.left = '-250px';
+        document.querySelector('.overlay').style.display = 'none';
+      }
     }
-  }
-
-</script>
+  </script>
 
 </body>
 
 </html>
-
-
