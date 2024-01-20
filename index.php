@@ -160,11 +160,11 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <!-- start header jumbotron -->
   <header class="sidebar">
     <ul class="sidebarlink">
-      <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
-      <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
-      <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
-      <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
-      <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
+      <li><a href="#"><i class="fas fa-qrcode text-light"></i>Home</a></li>
+      <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
+      <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
+      <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
+
     </ul>
   </header>
   <!-- end header jumbotron -->
