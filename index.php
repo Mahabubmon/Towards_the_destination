@@ -16,6 +16,7 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/all.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -114,10 +115,15 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     <a href="index.php" class="navbar-brand">গন্তব্যের দিকে</a>
     <span class="nav-text">Give the best route for the customer's</span>
 
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu"
-      onclick="toggleSideMenu()">
+
+
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="sidebar">
+
+    </div>
+
     <div class="collapse navbar-collapse" id="myMenu">
       <ul class="navbar-nav pl-5 custom-nav">
         <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
@@ -149,18 +155,21 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   </nav>
   <!-- End nav-bar -->
   <!-- Sidebar -->
-  <div class="side-menu">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-    <!-- Add more links as needed -->
-  </div>
-  <div class="overlay" onclick="toggleSideMenu()"></div>
+
   <!-- End Sidebar -->
   <!-- start header jumbotron -->
-  <header class="jumbotron back-image" style="background-image:url('images/Screenshot (742).png');">
+  <header class="sidebar">
+    <ul class="sidebarlink">
+      <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
+      <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
+      <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
+      <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
+      <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
+    </ul>
   </header>
   <!-- end header jumbotron -->
+
+
 
 
   <!-- start footer -->
@@ -177,7 +186,7 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <script src="./js/all.min.js"></script>
   <script src="./js/script.js"></script>
 
-  <script>
+  <!-- <script>
     function toggleSideMenu() {
       var sideMenu = document.querySelector('.side-menu');
 
@@ -189,7 +198,10 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
         document.querySelector('.overlay').style.display = 'none';
       }
     }
-  </script>
+  </script> -->
+
+
+
 
 </body>
 
