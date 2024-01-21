@@ -120,37 +120,24 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="sidebar">
 
-    </div>
-
-    <div class="collapse navbar-collapse" id="myMenu">
-      <ul class="navbar-nav pl-5 custom-nav">
-        <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="index.php" class="nav-link">District</a></li>
-        <li class="nav-item"><a href="index.php" class="nav-link">Placement</a></li>
-        <li class="nav-item"><a href="index.php" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="index.php" class="nav-link">Contact</a></li>
-        <li class="nav-item"><a href="index.php" class="nav-link">Info</a></li>
-      </ul>
-
-      <ul class="navbar-nav ml-auto">
-        <?php if ($username) { ?>
-          <!-- If user is logged in, display logout button -->
-          <li class="nav-item">
-            <a href="logout.php" class="nav-link">
-              <button type="button" class="btn btn-outline-light loginbtn">Logout</button>
-            </a>
-          </li>
-        <?php } else { ?>
-          <!-- If user is not logged in, display login button -->
-          <li class="nav-item">
-            <a href="login.php" class="nav-link">
-              <button type="button" class="btn btn-outline-light loginbtn">Login</button>
-            </a>
-          </li>
-        <?php } ?>
-      </ul>
+    <ul class="navbar-nav ml-auto">
+      <?php if ($username) { ?>
+        <!-- If user is logged in, display logout button -->
+        <li class="nav-item">
+          <a href="logout.php" class="nav-link">
+            <button type="button" class="btn btn-outline-light loginbtn">Logout</button>
+          </a>
+        </li>
+      <?php } else { ?>
+        <!-- If user is not logged in, display login button -->
+        <li class="nav-item">
+          <a href="login.php" class="nav-link">
+            <button type="button" class="btn btn-outline-light loginbtn">Login</button>
+          </a>
+        </li>
+      <?php } ?>
+    </ul>
     </div>
   </nav>
   <!-- End nav-bar -->
