@@ -57,6 +57,7 @@ body{
    .sidebar{
     /* top: 73px; */
     position: fixed;
+    left: -250px;
     left: 0;
     width: 250px;
     height: 100%;
@@ -91,4 +92,42 @@ body{
 
   .sidebar ul a i{
     margin-right: 16px;
+  }
+
+  #check{
+    display: none;
+  }
+
+  #btn{
+        position: absolute;
+        cursor: pointer;
+        background: #042331;
+        border-radius: 3px;
+  }
+  #cancle{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+  }
+
+
+  label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+  }
+
+  label #cancle{
+    z-index: 1111;
+    left: 195px;
+    top: 17px;
+    color: #0a5275;
+    padding: 4px 9px;
+
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
   }
