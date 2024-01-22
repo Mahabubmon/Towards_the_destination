@@ -131,3 +131,16 @@ body{
   #check:checked ~ .sidebar{
     left: 0;
   }
+    .sidebar {
+      width: 0;
+      position: fixed;
+      height: 100%;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+  
+    .sidebar.active {
+      width: 250px;
+    }
