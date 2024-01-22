@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/script.js"></script>
 
     <title>Document</title>
-
 </head>
+
 
 <body>
 
     <input type="checkbox" id="check">
     <label for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancle"></i>
+        <i class="fas fa-bars" id="btn" onclick="sidebar()"></i>
+        <i class="fas fa-times" id="cancle" onclick="closebtn()"></i>
     </label>
     <div class="sidebar">
         <header>Test Case</header>
@@ -30,21 +31,23 @@
 
         </ul>
     </div>
-
-    <script>
-        $(document).ready(function () {
-            $('#btn').click(function () {
-                $('.sidebar').toggleClass('active');
-            });
-        });
-
-    </script>
-
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="./js/all.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script>
+        function sidebar() {
+            $('.sidebar').toggleClass('active');
+        }
+
+        function closebtn() {
+            $('.sidebar').removeClass('active');
+        }
+
+    </script>
+
+
 
 
 </body>
