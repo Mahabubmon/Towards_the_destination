@@ -18,7 +18,7 @@
             /* Initially hide the close button */
             font-size: 20px;
             color: #fff;
-            background-color: #e74c3c;
+            background-color: #6c748d;
             /* Red background color */
             border: none;
             padding: 8px 12px;
@@ -43,9 +43,10 @@
     <input type="checkbox" id="check">
     <label for="check">
         <i class="fas fa-bars" id="btn" onclick="toggleSidebar()"></i>
-        <i class="fas fa-times" id="closeBtn" onclick="closebtn()"></i>
+
     </label>
     <div class="sidebar">
+        <i class="fas fa-times" id="closeBtn" onclick="closebtn()"></i>
         <header>Test Case</header>
         <ul class="sidebarlink">
             <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
