@@ -105,6 +105,31 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
       text-align: center;
     }
   </style>
+  <style>
+    #closeBtn {
+      display: none;
+      /* Initially hide the close button */
+      font-size: 20px;
+      color: #fff;
+      background-color: #6c748d;
+      /* Red background color */
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      transition: background-color 0.3s;
+      margin-top: 48px;
+    }
+
+    #closeBtn:hover {
+      background-color: #c0392b;
+      /* Darker red on hover */
+    }
+  </style>
+
 </head>
 
 
@@ -145,15 +170,21 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
 
   <!-- End Sidebar -->
   <!-- start header jumbotron -->
-  <header class="sidebar">
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn" onclick="toggleSidebar()"></i>
+
+  </label>
+  <div class="sidebar">
+    <i class="fas fa-times" id="closeBtn" onclick="closebtn()"></i>
+    <header>Test Case</header>
     <ul class="sidebarlink">
       <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
       <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
       <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
       <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
-
     </ul>
-  </header>
+  </div>
   <!-- end header jumbotron -->
 
 
@@ -173,19 +204,18 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <script src="./js/all.min.js"></script>
   <script src="./js/script.js"></script>
 
-  <!-- <script>
-    function toggleSideMenu() {
-      var sideMenu = document.querySelector('.side-menu');
-
-      if (sideMenu.style.left === '-250px' || sideMenu.style.left === '') {
-        sideMenu.style.left = '0';
-        document.querySelector('.overlay').style.display = 'block';
-      } else {
-        sideMenu.style.left = '-250px';
-        document.querySelector('.overlay').style.display = 'none';
-      }
+  <script>
+    function toggleSidebar() {
+      $('.sidebar').toggleClass('active');
+      $('#closeBtn').toggle(); // Toggle close button visibility
     }
-  </script> -->
+
+    function closebtn() {
+      $('.sidebar').removeClass('active');
+      $('#closeBtn').hide(); // Hide close button
+    }
+
+  </script>
 
 
 
