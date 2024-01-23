@@ -11,6 +11,31 @@
     <script src="./js/script.js"></script>
 
     <title>Document</title>
+
+    <style>
+        #closeBtn {
+            display: none;
+            /* Initially hide the close button */
+            font-size: 20px;
+            color: #fff;
+            background-color: #e74c3c;
+            /* Red background color */
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transition: background-color 0.3s;
+        }
+
+        #closeBtn:hover {
+            background-color: #c0392b;
+            /* Darker red on hover */
+        }
+    </style>
+
 </head>
 
 <body>
