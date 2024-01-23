@@ -13,13 +13,12 @@
     <title>Document</title>
 </head>
 
-
 <body>
 
     <input type="checkbox" id="check">
     <label for="check">
-        <i class="fas fa-bars" id="btn" onclick="sidebar()"></i>
-        <i class="fas fa-times" id="cancle" onclick="closebtn()"></i>
+        <i class="fas fa-bars" id="btn" onclick="toggleSidebar()"></i>
+        <i class="fas fa-times" id="closeBtn" onclick="closebtn()"></i>
     </label>
     <div class="sidebar">
         <header>Test Case</header>
@@ -28,7 +27,6 @@
             <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
             <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
             <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
-
         </ul>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -37,18 +35,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="./js/all.min.js"></script>
     <script>
-        function sidebar() {
+        function toggleSidebar() {
             $('.sidebar').toggleClass('active');
+            $('#closeBtn').toggle(); // Toggle close button visibility
         }
 
         function closebtn() {
             $('.sidebar').removeClass('active');
+            $('#closeBtn').hide(); // Hide close button
         }
 
     </script>
-
-
-
 
 </body>
 
