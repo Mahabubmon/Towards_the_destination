@@ -145,3 +145,7 @@ body{
     .sidebar.active {
       width: 250px;
     }
+    .regbtn{
+      margin-top: -97px;
+
+    }

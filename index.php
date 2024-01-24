@@ -160,6 +160,9 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
           <a href="login.php" class="nav-link">
             <button type="button" class="btn btn-outline-light loginbtn">Login</button>
           </a>
+          <a href="registration.php" class="nav-link">
+            <button type="button" class="btn btn-outline-light regbtn">Registration</button>
+          </a>
         </li>
       <?php } ?>
     </ul>
