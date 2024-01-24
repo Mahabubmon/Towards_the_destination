@@ -167,9 +167,6 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   </nav>
   <!-- End nav-bar -->
   <!-- Sidebar -->
-
-  <!-- End Sidebar -->
-  <!-- start header jumbotron -->
   <input type="checkbox" id="check">
   <label for="check">
     <i class="fas fa-bars" id="btn" onclick="toggleSidebar()"></i>
@@ -185,6 +182,13 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
       <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
     </ul>
   </div>
+  <!-- End Sidebar -->
+  <!-- start header jumbotron -->
+  <div class="back-image">
+    <img src="images/Screenshot (742).png" alt="">
+
+  </div>
+
   <!-- end header jumbotron -->
 
 

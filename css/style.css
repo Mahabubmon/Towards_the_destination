@@ -32,17 +32,17 @@ body{
 
 /* image responsive */
 
-/* .back-image{
+.back-image{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat ;
     min-height: 90vh;
     border-radius: 0;
     margin-top: 74px;
-} */
+}
 
 .loginbtn{
-    margin-left: 525px;
+        margin-left: 920px;
 }
  
    footer {
@@ -113,7 +113,7 @@ body{
 
 
   label #btn{
-    left: 40px;
+    left: 0px;
     top: 25px;
     font-size: 35px;
     color: white;
