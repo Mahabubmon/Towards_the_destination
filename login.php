@@ -67,6 +67,8 @@ if (isset($_POST['submit'])) {
             border-radius: 6px;
             /* Adjust the width as needed */
         }
+
+        #homebtn {}
     </style>
 </head>
 
@@ -90,6 +92,9 @@ if (isset($_POST['submit'])) {
                 </div>
                 <input type="submit" class="btn btn-primary" id="loginBtn" value="Login" name="submit">
             </form>
+            <button class="btn btn-info" onclick="window.location.href='index.php'">Back To Home</button>
+
+
         </div>
     </div>
 
