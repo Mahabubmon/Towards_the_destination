@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Registration</title>
-
     <style>
         body {
             display: flex;
@@ -15,18 +13,39 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
+            background-color: #f8f9fa;
+            /* Add your preferred background color */
         }
 
         .custom-card {
-            /* Add additional styling if needed */
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .custom-card .card-body {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .signin {
+            text-align: center;
         }
     </style>
+    <title>Registration</title>
 </head>
 
 <body>
 
-    <div class="card custom-card ">
+    <div class="card custom-card">
         <div class="card-body">
+
+            <h2 class="text-center mb-4">Registration</h2>
 
             <form>
                 <div class="form-group">
@@ -42,12 +61,13 @@
                 </div>
                 <div class="form-group form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <label class="form-check-label" for="exampleCheck1">I agree to the <a href="#">Terms of Service</a>
+                        and <a href="#">Privacy Policy</a></label>
                 </div>
-                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
 
-                <div class="container signin">
-                    <p>Already have an account? <a href="">Sign in</a>.</p>
+                <div class="signin">
+                    <p>Already have an account? <a href="#">Sign in</a>.</p>
                 </div>
             </form>
 
