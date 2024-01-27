@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+   
 }
 *{
     margin: 0;
@@ -32,17 +33,20 @@ body{
 
 /* image responsive */
 
-.back-image{
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat ;
-    min-height: 90vh;
-    border-radius: 0;
-    margin-top: 74px;
+.back-image {
+  background-image: url('../images/Screenshot\ \(742\).png');
+  /* Add the background image URL */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  border-radius: 0;
+  margin-top: -23px;
 }
 
 .loginbtn{
         margin-left: 920px;
+        margin-bottom: 43px;
 }
  
    footer {
@@ -62,7 +66,7 @@ body{
     width: 250px;
     height: 100%;
     background: #042331;
-    margin-top: 33px;
+    margin-top: -7px;
    }
 
    .sidebar header{
@@ -115,7 +119,7 @@ body{
 
   label #btn{
     left: 0px;
-    top: 59px;
+    top: 24px;
     font-size: 35px;
     color: white;
     padding: 6px 12px;

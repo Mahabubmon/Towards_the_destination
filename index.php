@@ -188,7 +188,7 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <!-- End Sidebar -->
   <!-- start header jumbotron -->
   <div class="back-image">
-    <img src="images/Screenshot (742).png" alt="">
+
 
   </div>
 
