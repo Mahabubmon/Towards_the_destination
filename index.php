@@ -170,21 +170,23 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   </nav>
   <!-- End nav-bar -->
   <!-- Sidebar -->
-  <input type="checkbox" id="check">
-  <label for="check">
-    <i class="fas fa-bars" id="btn" onclick="toggleSidebar()"></i>
+  <?php if ($username) { ?>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn" onclick="toggleSidebar()"></i>
 
-  </label>
-  <div class="sidebar">
-    <i class="fas fa-times" id="closeBtn" onclick="closebtn()"></i>
-    <header>Test Case</header>
-    <ul class="sidebarlink">
-      <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
-      <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
-      <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
-      <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
-    </ul>
-  </div>
+    </label>
+    <div class="sidebar">
+      <i class="fas fa-times" id="closeBtn" onclick="closebtn()"></i>
+      <header>Test Case</header>
+      <ul class="sidebarlink">
+        <li><a href="#"><i class="fas fa-qrcode"></i>Home</a></li>
+        <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
+        <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
+        <li><a href="#"><i class="fas fa-qrcode"></i>Content</a></li>
+      </ul>
+    </div>
+  <?php } ?>
   <!-- End Sidebar -->
   <!-- start header jumbotron -->
   <div class="back-image">
