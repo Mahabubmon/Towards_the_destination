@@ -149,9 +149,9 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     <ul class="navbar-nav ml-auto">
       <?php if ($username) { ?>
         <!-- If user is logged in, display logout button -->
-        <li class="nav-item">
-          <a href="logout.php" class="nav-link">
-            <button type="button" class="btn btn-outline-light loginbtn">Logout</button>
+        <li class="nav-item logoutbtn">
+          <a href="logout.php" class="nav-link ">
+            <button type="button" class="btn btn-outline-light ">Logout</button>
           </a>
         </li>
       <?php } else { ?>

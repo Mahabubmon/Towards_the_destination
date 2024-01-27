@@ -48,6 +48,10 @@ body{
         margin-left: 920px;
         margin-bottom: 43px;
 }
+.logoutbtn{
+        margin-left: 920px;
+        margin-bottom: 0px;
+}
  
    footer {
        position: fixed;
