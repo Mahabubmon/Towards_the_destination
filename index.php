@@ -155,13 +155,13 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
           </a>
         </li>
       <?php } else { ?>
-        <!-- If user is not logged in, display login button -->
-        <li class="nav-item">
+        <!-- If user is not logged in, display login and registration buttons in the same row -->
+        <li class="nav-item ml-auto">
           <a href="login.php" class="nav-link">
             <button type="button" class="btn btn-outline-light loginbtn">Login</button>
           </a>
-          <a href="registration.php" class="nav-link">
-            <button type="button" class="btn btn-outline-light regbtn">Registration</button>
+          <a href="registration.php" class="nav-link regbtn">
+            <button type="button" class="btn btn-outline-light ">Registration</button>
           </a>
         </li>
       <?php } ?>
