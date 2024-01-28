@@ -21,38 +21,6 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <title>গন্তব্যের দিকে</title>
-
-
-  <style>
-    /* Your existing styles */
-
-    /* Style for the side menu */
-  </style>
-  <style>
-    #closeBtn {
-      display: none;
-      /* Initially hide the close button */
-      font-size: 20px;
-      color: #fff;
-      background-color: #6c748d;
-      /* Red background color */
-      border: none;
-      padding: 8px 12px;
-      cursor: pointer;
-      border-radius: 5px;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      transition: background-color 0.3s;
-      margin-top: 48px;
-    }
-
-    #closeBtn:hover {
-      background-color: #c0392b;
-      /* Darker red on hover */
-    }
-  </style>
-
 </head>
 
 
@@ -113,12 +81,36 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <!-- End Sidebar -->
   <!-- start header jumbotron -->
   <div class="back-image">
-
-
   </div>
+
+
+
+
 
   <!-- end header jumbotron -->
 
+  <!-- start main section -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+
+        <!-- Card with Shadow -->
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Some text content for the card.</p>
+            <!-- You can add more content here -->
+
+            <!-- Example: Button inside the card -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <!-- End Card -->
+
+      </div>
+    </div>
+  </div>
+  <!-- End main section -->
 
 
 
