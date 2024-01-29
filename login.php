@@ -15,32 +15,32 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    if ($email != '' && $password != '') {
-        alert("need to full fill all field");
+    // if ($email != '' && $password != '') {
+    //     alert("need to full fill all field");
+    // } else {
+
+
+
+    $sql = "SELECT * FROM login_tbl WHERE email ='$email' AND password ='$password'";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    $count = mysqli_num_rows($result);
+
+    if ($count == 1) {
+        $_SESSION['email'] = $row['email'];
+        header("Location: index.php");
+
+        exit();
+
     } else {
-
-
-
-        $sql = "SELECT * FROM login_tbl WHERE email ='$email' AND password ='$password'";
-        $result = mysqli_query($conn, $sql);
-        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-        $count = mysqli_num_rows($result);
-
-        if ($count == 1) {
-            $_SESSION['email'] = $row['email'];
-            header("Location: index.php");
-
-            exit();
-
-        } else {
-            echo '<script>
+        echo '<script>
         window.location.href = "login.php";
         alert("Login failed. Invalid Email or Password!!!");
         </script>';
-        }
-
     }
+
 }
+// }
 ?>
 
 <!DOCTYPE html>

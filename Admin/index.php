@@ -28,8 +28,10 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
 
     <!-- start nav-bar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-danger pl-5 fixed-top">
-        <a href="index.php" class="navbar-brand">গন্তব্যের দিকে</a>
-        <span class="nav-text">Give the best route for the customer's</span>
+        <a href="index.php" class="navbar-brand d-flex align-items-center justify-content-center">
+            <span class="text text-center">গন্তব্যের দিকে</span>
+        </a>
+
 
 
 
@@ -41,7 +43,7 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
             <?php if ($username) { ?>
                 <!-- If user is logged in, display logout button -->
                 <li class="nav-item logoutbtn">
-                    <a href="logout.php" class="nav-link ">
+                    <a href="../logout.php" class="nav-link ">
                         <button type="button" class="btn btn-outline-light ">Logout</button>
                     </a>
                 </li>
