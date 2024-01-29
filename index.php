@@ -128,7 +128,14 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <script src="./js/all.min.js"></script>
   <script src="./js/script.js"></script>
 
-  <script>
+  
+
+
+
+</body>
+
+</html>
+<script>
     function toggleSidebar() {
       $('.sidebar').toggleClass('active');
       $('#closeBtn').toggle(); // Toggle close button visibility
@@ -140,10 +147,3 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     }
 
   </script>
-
-
-
-
-</body>
-
-</html>
