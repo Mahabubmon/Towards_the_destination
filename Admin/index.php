@@ -94,3 +94,16 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
 </body>
 
 </html>
+
+<script>
+    function toggleSidebar() {
+      $('.sidebar').toggleClass('active');
+      $('#closeBtn').toggle(); // Toggle close button visibility
+    }
+
+    function closebtn() {
+      $('.sidebar').removeClass('active');
+      $('#closeBtn').hide(); // Hide close button
+    }
+
+  </script>
