@@ -29,7 +29,7 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <!-- start nav-bar -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-danger pl-5 fixed-top">
     <a href="index.php" class="navbar-brand">গন্তব্যের দিকে</a>
-    <span class="nav-text">Give the best route for the customer's</span>
+    <span class="nav-text">Give the best route for the peace seeker</span>
 
 
 
@@ -38,6 +38,8 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     </button>
 
     <ul class="navbar-nav ml-auto">
+      <li><a class="nav-link" href="">Route</a></li>
+      <li><a class="nav-link" href="">Vehicle</a></li>
       <?php if ($username) { ?>
         <!-- If user is logged in, display logout button -->
         <li class="nav-item logoutbtn">
@@ -88,32 +90,6 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
 
 
   <!-- end header jumbotron -->
-
-  <!-- start main section -->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
-
-        <!-- Card with Shadow -->
-        <div class="card shadow">
-          <div class="card-body">
-            <h5 class="card-title">Card Title</h5>
-            <p class="card-text">Some text content for the card.</p>
-            <!-- You can add more content here -->
-
-            <!-- Example: Button inside the card -->
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <!-- End Card -->
-
-      </div>
-    </div>
-  </div>
-  <!-- End main section -->
-
-
-
   <!-- start footer -->
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2024 গন্তব্যের দিকে. All Rights Reserved.</p>
@@ -128,7 +104,7 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <script src="./js/all.min.js"></script>
   <script src="./js/script.js"></script>
 
-  
+
 
 
 
@@ -136,14 +112,14 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
 
 </html>
 <script>
-    function toggleSidebar() {
-      $('.sidebar').toggleClass('active');
-      $('#closeBtn').toggle(); // Toggle close button visibility
-    }
+  function toggleSidebar() {
+    $('.sidebar').toggleClass('active');
+    $('#closeBtn').toggle(); // Toggle close button visibility
+  }
 
-    function closebtn() {
-      $('.sidebar').removeClass('active');
-      $('#closeBtn').hide(); // Hide close button
-    }
+  function closebtn() {
+    $('.sidebar').removeClass('active');
+    $('#closeBtn').hide(); // Hide close button
+  }
 
-  </script>
+</script>
