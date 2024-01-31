@@ -86,7 +86,26 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   </div>
 
 
-
+  <!-- Contact Section -->
+  <section class="contact-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading text-white">Contact Us</h2>
+          <p class="text-white">Feel free to get in touch with us if you have any questions or concerns.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mx-auto text-center">
+          <i class="fas fa-envelope fa-3x mb-3 text-white"></i>
+          <p>
+            <a href="mailto:info@example.com" class="text-white">info@example.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
 
 
   <!-- end header jumbotron -->
