@@ -142,6 +142,55 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     </section>
   <?php } ?>
   <!-- End Explore Section -->
+  <!-- Featured Routes Section (visible to logged-in users) -->
+  <?php if ($username) { ?>
+    <section id="featured-routes" class="featured-routes-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-dark">Featured Routes</h2>
+            <p class="text-dark">Explore our featured routes, carefully selected for an amazing travel experience.</p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Featured Route 1 -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/route1.jpg" class="img-fluid" alt="Featured Route 1">
+              <div class="card-body">
+                <h5 class="card-title">Scenic Mountain Drive</h5>
+                <p class="card-text">Experience breathtaking views on this scenic mountain drive.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Route 2 -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/route2.jpg" class="img-fluid" alt="Featured Route 2">
+              <div class="card-body">
+                <h5 class="card-title">Coastal Adventure</h5>
+                <p class="card-text">Embark on an adventurous journey along the beautiful coastline.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Route 3 -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/route3.jpg" class="img-fluid" alt="Featured Route 3">
+              <div class="card-body">
+                <h5 class="card-title">City Lights Tour</h5>
+                <p class="card-text">Explore the city lights and landmarks on this captivating tour.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <?php } ?>
+  <!-- End Featured Routes Section -->
+
 
 
   <!-- end header jumbotron -->
