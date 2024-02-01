@@ -85,6 +85,25 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   <div class="back-image">
   </div>
 
+  <!-- Main Content Section -->
+  <section class="main-content py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <?php if ($username) { ?>
+            <h2 class="section-heading text-dark">Welcome,
+              <?php echo $username; ?>!
+            </h2>
+            <p class="text-dark">Thank you for using our platform. Explore and enjoy the journey!</p>
+          <?php } else { ?>
+            <h2 class="section-heading text-dark">Explore the Best Routes</h2>
+            <p class="text-dark">Find the perfect route for your journey with ease and convenience.</p>
+          <?php } ?>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Main Content Section -->
 
   <!-- Contact Section -->
   <section class="contact-section py-5">
