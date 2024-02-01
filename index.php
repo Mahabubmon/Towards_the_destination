@@ -126,6 +126,23 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
   </section>
   <!-- End Contact Section -->
 
+  <!-- Explore Section (visible to logged-in users) -->
+  <?php if ($username) { ?>
+    <section id="explore" class="explore-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-dark">Explore Routes</h2>
+            <p class="text-dark">Browse through our curated routes to find the one that suits your preferences. Make your
+              journey memorable with Ganter Beye Dike.</p>
+            <a href="#featured-routes" class="btn btn-info btn-lg">View Featured Routes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <?php } ?>
+  <!-- End Explore Section -->
+
 
   <!-- end header jumbotron -->
   <!-- start footer -->
