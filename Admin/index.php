@@ -115,6 +115,16 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
         </ul>
     </div>
 
+    <div class="notification-center">
+        <h2>Notifications</h2>
+        <ul>
+            <!-- Display notifications dynamically using AJAX -->
+            <li><a href="#">New message received</a></li>
+            <li><a href="#">Task assigned</a></li>
+            <!-- Add more notification items as needed -->
+        </ul>
+    </div>
+
 
     <!-- javascript section -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
