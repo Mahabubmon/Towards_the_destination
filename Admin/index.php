@@ -97,6 +97,24 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
         <!-- Add more user details as needed -->
     </ul>
 
+    <div class="dashboard">
+        <h2>Dashboard</h2>
+        <div class="widget">
+            <!-- Add your widget content here -->
+        </div>
+        <!-- Add more widgets as needed -->
+    </div>
+
+    <div class="recent-activities">
+        <h2>Recent Activities</h2>
+        <ul>
+            <!-- Display recent activities dynamically -->
+            <li>User John Doe logged in.</li>
+            <li>New content added by Admin.</li>
+            <!-- Add more activity items as needed -->
+        </ul>
+    </div>
+
 
     <!-- javascript section -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
