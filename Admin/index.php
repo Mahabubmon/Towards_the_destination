@@ -78,6 +78,24 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
         </div>
     <?php } ?>
     <!-- End Sidebar -->
+    <?php
+    // Fetch user information from the database
+    $userQuery = "SELECT * FROM users WHERE email = '$username'";
+    $userResult = mysqli_query($conn, $userQuery);
+    $userData = mysqli_fetch_assoc($userResult);
+    ?>
+
+    <!-- Display user information in the sidebar -->
+    <header>User Information</header>
+    <ul class="sidebarlink">
+        <li><strong>Name:</strong>
+            <?php echo $userData['name']; ?>
+        </li>
+        <li><strong>Email:</strong>
+            <?php echo $userData['email']; ?>
+        </li>
+        <!-- Add more user details as needed -->
+    </ul>
 
 
     <!-- javascript section -->
@@ -97,13 +115,13 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
 
 <script>
     function toggleSidebar() {
-      $('.sidebar').toggleClass('active');
-      $('#closeBtn').toggle(); // Toggle close button visibility
+        $('.sidebar').toggleClass('active');
+        $('#closeBtn').toggle(); // Toggle close button visibility
     }
 
     function closebtn() {
-      $('.sidebar').removeClass('active');
-      $('#closeBtn').hide(); // Hide close button
+        $('.sidebar').removeClass('active');
+        $('#closeBtn').hide(); // Hide close button
     }
 
-  </script>
+</script>
