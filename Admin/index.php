@@ -55,10 +55,7 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
         </div>
     </nav>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 গন্তব্যের দিকে. All Rights Reserved.</p>
-    </footer>
-    <!-- end footer -->
+
     <!-- Sidebar -->
     <?php if ($username) { ?>
         <input type="checkbox" id="check">
@@ -78,52 +75,111 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
         </div>
     <?php } ?>
     <!-- End Sidebar -->
-    <?php
-    // Fetch user information from the database
-    $userQuery = "SELECT * FROM users WHERE email = '$username'";
-    $userResult = mysqli_query($conn, $userQuery);
-    $userData = mysqli_fetch_assoc($userResult);
-    ?>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8"> <!-- Adjust the size as needed for your dashboard content -->
 
-    <!-- Display user information in the sidebar -->
-    <header>User Information</header>
-    <ul class="sidebarlink">
-        <li><strong>Name:</strong>
-            <?php echo $userData['name']; ?>
-        </li>
-        <li><strong>Email:</strong>
-            <?php echo $userData['email']; ?>
-        </li>
-        <!-- Add more user details as needed -->
-    </ul>
+                <!-- Dashboard content goes here -->
 
-    <div class="dashboard">
-        <h2>Dashboard</h2>
-        <div class="widget">
-            <!-- Add your widget content here -->
+            </div>
+
+            <div class="col-md-4"> <!-- Use a separate column for user information -->
+                <?php
+                // Fetch user information from the database
+                $userQuery = "SELECT * FROM login_tbl WHERE email = '$username'";
+                $userResult = mysqli_query($conn, $userQuery);
+                $userData = mysqli_fetch_assoc($userResult);
+                ?>
+
+                <!-- Display user information in the sidebar -->
+                <header class="text mr-5">User Information</header>
+                <ul class="sidebarlink">
+                    <li><strong>Name:</strong>
+                        <?php echo $userData['name']; ?>
+                    </li>
+                    <li><strong>Email:</strong>
+                        <?php echo $userData['email']; ?>
+                    </li>
+                    <!-- Add more user details as needed -->
+                </ul>
+            </div>
         </div>
-        <!-- Add more widgets as needed -->
     </div>
 
-    <div class="recent-activities">
-        <h2>Recent Activities</h2>
-        <ul>
-            <!-- Display recent activities dynamically -->
-            <li>User John Doe logged in.</li>
-            <li>New content added by Admin.</li>
-            <!-- Add more activity items as needed -->
-        </ul>
+    <div class="container mt-5"> <!-- Add Bootstrap class 'container' and margin-top -->
+        <div class="row justify-content-center"> <!-- Add Bootstrap class 'row' and 'justify-content-center' -->
+            <div class="col-md-8"> <!-- Add Bootstrap class 'col-md-8' (adjust the size as needed) -->
+                <div class="dashboard">
+                    <h2 class="text-center">Dashboard</h2>
+                    <div class="widget">
+                        <!-- Add your widget content here -->
+                    </div>
+                    <!-- Add more widgets as needed -->
+                </div>
+
+                <div class="recent-activities">
+                    <h2 class="text-center">Recent Activities</h2>
+                    <ul>
+                        <!-- Display recent activities dynamically -->
+                        <li>User John Doe logged in.</li>
+                        <li>New content added by Admin.</li>
+                        <!-- Add more activity items as needed -->
+                    </ul>
+                </div>
+
+                <div class="notification-center">
+                    <h2 class="text-center">Notifications</h2>
+                    <ul>
+                        <!-- Display notifications dynamically using AJAX -->
+                        <li><a href="#">New message received</a></li>
+                        <li><a href="#">Task assigned</a></li>
+                        <!-- Add more notification items as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="notification-center">
-        <h2>Notifications</h2>
-        <ul>
-            <!-- Display notifications dynamically using AJAX -->
-            <li><a href="#">New message received</a></li>
-            <li><a href="#">Task assigned</a></li>
-            <!-- Add more notification items as needed -->
-        </ul>
+    <!-- Inside the Dashboard content section (within the col-md-8) -->
+    <div class="dashboard">
+        <h2 class="text-center">Dashboard @/div></h2>
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Card Title 1</h5>
+                <p class="card-text">Some text for Card 1. You can add more details here.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title">Card Title 2</h5>
+                <p class="card-text">Some text for Card 2. You can add more details here.</p>
+            </div>
+        </div>
+
+        <!-- Add more cards as needed -->
+
+        <div class="widget mt-3">
+            <!-- Your existing widget content -->
+        </div>
+
+        <div class="recent-activities mt-3">
+            <!-- Your existing recent activities content -->
+        </div>
+
+        <div class="notification-center mt-3">
+            <!-- Your existing notification center content -->
+        </div>
     </div>
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 গন্তব্যের দিকে. All Rights Reserved.</p>
+    </footer>
+    <!-- end footer -->
 
 
     <!-- javascript section -->
