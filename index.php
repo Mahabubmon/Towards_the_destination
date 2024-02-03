@@ -284,4 +284,9 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     $('#closeBtn').hide(); // Hide close button
   }
 
+
+
+  $(document).ready(function () {
+    $('#featuredCarousel').carousel();
+  });
 </script>
