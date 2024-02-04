@@ -176,45 +176,6 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
             </div>
         </div>
 
-
-
-        <!-- In the notification-center section -->
-        <div class="notification-center mt-3">
-            <h2 class="text-center">Notifications</h2>
-            <ul id="notificationList">
-                <!-- Use JavaScript to dynamically update this list -->
-            </ul>
-        </div>
-
-
-
-
-        <!-- In the recent-activities section -->
-        <!-- <div class="recent-activities mt-3">
-            <h2 class="text-center">Recent Activities</h2>
-            <ul>
-                <?php
-                // Fetch and display recent activities from the database
-                // Modify this part based on your database schema
-                $activitiesQuery = "SELECT * FROM activities ORDER BY timestamp DESC LIMIT 5";
-                $activitiesResult = mysqli_query($conn, $activitiesQuery);
-                while ($activity = mysqli_fetch_assoc($activitiesResult)) {
-                    echo "<li>{$activity['description']}</li>";
-                }
-                ?>
-            </ul>
-        </div> -->
-
-
-        <!-- Add this toggle switch in the header or settings section -->
-        <!-- <label class="switch">
-            <input type="checkbox" id="darkModeToggle">
-            <span class="slider round"></span>
-        </label> -->
-
-
-
-
         <!-- Add more cards as needed -->
 
         <div class="widget mt-3">
