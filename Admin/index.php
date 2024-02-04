@@ -140,6 +140,22 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
         </div>
     </div>
 
+    <div>
+        <li><a href="edit_profile.php"><i class="fas fa-user-edit"></i>Edit Profile</a></li>
+        <li><a href="change_password.php"><i class="fas fa-key"></i>Change Password</a></li>
+
+
+    </div>
+
+
+    <!-- In the dashboard section -->
+    <div class="widget mt-3">
+        <h3 class="text-center">User Statistics</h3>
+        <!-- Add dynamic content based on user statistics -->
+    </div>
+
+
+
     <!-- Inside the Dashboard content section (within the col-md-8) -->
     <div class="dashboard">
         <h2 class="text-center">Dashboard @/div></h2>
