@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['email'] = $newEmail;
 
     // Redirect to the profile page after update
-    header("Location: profile.php");
+    header("Location: index.php");
     exit();
 }
 ?>

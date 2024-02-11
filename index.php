@@ -40,6 +40,7 @@ $username = isset($_SESSION['email']) ? $_SESSION['email'] : '';
     <ul class="navbar-nav ml-auto">
       <li><a class="nav-link" href="">Route</a></li>
       <li><a class="nav-link" href="">Vehicle</a></li>
+      <li><a class="nav-link" href="contact.php">Contact Us</a></li>
       <?php if ($username) { ?>
         <!-- If user is logged in, display logout button -->
         <li class="nav-item logoutbtn">
