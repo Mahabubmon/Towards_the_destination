@@ -93,15 +93,26 @@
             </ul>
         </div>
 
-        <div class="card">
-            <h2>Contact Form:</h2>
-            <p><a href="#contact-form">Click here to fill out our contact form</a></p>
-        </div>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="card">
+                <h2>Contact Form:</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
 
-        <footer>
-            <p>We value your feedback and inquiries and will respond to you as soon as possible.</p>
-        </footer>
-    </div>
+
+            <footer>
+                <p>We value your feedback and inquiries and will respond to you as soon as possible.</p>
+            </footer>
+        </div>
 </body>
 
 </html>
