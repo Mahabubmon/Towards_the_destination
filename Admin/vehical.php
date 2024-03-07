@@ -77,7 +77,36 @@
                     three-wheeled motor vehicle.</p>
             </div>
         </div>
-        <!-- Add more cards for other vehicles -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Bus">
+            <div class="card-content">
+                <h2 class="card-title">Bus</h2>
+                <p class="card-description">A bus is a large motor vehicle designed to carry passengers by road.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Truck">
+            <div class="card-content">
+                <h2 class="card-title">Truck</h2>
+                <p class="card-description">A truck or lorry is a motor vehicle designed to transport cargo.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Airplane">
+            <div class="card-content">
+                <h2 class="card-title">Airplane</h2>
+                <p class="card-description">An airplane is a powered, fixed-wing aircraft that is propelled forward by
+                    thrust from a jet engine, propeller, or rocket engine.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Train">
+            <div class="card-content">
+                <h2 class="card-title">Train</h2>
+                <p class="card-description">A train is a form of rail transport consisting of a series of connected
+                    vehicles that generally run along a rail track to transport cargo or passengers.</p>
+            </div>
+        </div>
     </div>
 </body>
 
